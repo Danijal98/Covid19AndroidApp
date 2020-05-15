@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Projekat</string>
+    <string name="login_info">Informacioni sistem za pracenje stanja pacijenata obolelih od Covid-19</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="ime_bolnice_u_kojoj_ste_zaposleni">Ime bolnice u kojoj ste zaposleni</string>
+    <string name="unesite_pin">Unesite pin</string>
+    <string name="prijava">Prijava</string>
+    <string name="info">Info</string>
+    <string name="unos">Unos</string>
+    <string name="liste">Liste</string>
+    <string name="profil">Profil</string>
+    <string name="bolnica">Bolnica</string>
+    <string name="izmeni">Izmeni</string>
+    <string name="odjava">Odjava</string>
+    <string name="pregled_brojnog_stanja_pacijenata">Pregled brojnog stanja pacijenata</string>
+    <string name="unos_novog_pacijenta">Unos novog pacijenta</string>
+    <string name="odustani">Odustani</string>
+    <string name="sacuvaj">Sacuvaj</string>
+    <string name="karton_pacijenta">Karton pacijenta</string>
+    <string name="podaci_o_zdravstvenom_radniku">Podaci o zdravstvenom radniku</string>
+    <string name="dodaj_u_cekaonicu">Dodaj u cekaonicu</string>
+</resources>

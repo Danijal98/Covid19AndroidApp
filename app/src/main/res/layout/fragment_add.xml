@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/addTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        style="@style/Title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textColor="@color/textPrimary"
+            android:text="@string/unos_novog_pacijenta"/>
+
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/colorAccentDark"
+            android:src="@drawable/ic_add64"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addMidLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/addDodajBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addTopLayout">
+
+        <EditText
+            android:id="@+id/addIme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="@string/ime" />
+
+        <EditText
+            android:id="@+id/addPrezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="@string/prezime" />
+
+        <EditText
+            android:id="@+id/addSimptomi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="Simptopmi i opste stanje pacijenta" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addDodajBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Button"
+        android:text="@string/dodaj_u_cekaonicu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

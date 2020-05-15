@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".view.activity.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        style="@style/Title">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/colorAccentDark"
+            android:src="@drawable/ic_healing64" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:gravity="center"
+            android:text="@string/login_info" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/loginMidLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_btn"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <EditText
+            android:id="@+id/login_ime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="@string/ime" />
+
+        <EditText
+            android:id="@+id/login_prezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="@string/prezime" />
+
+        <EditText
+            android:id="@+id/login_ime_bolnice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="@string/ime_bolnice_u_kojoj_ste_zaposleni" />
+
+        <EditText
+            android:id="@+id/login_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textHint"
+            android:hint="@string/unesite_pin" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        style="@style/Button"
+        android:text="@string/prijava"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
